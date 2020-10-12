@@ -180,7 +180,7 @@
             <artifactId>joda-time</artifactId>
         </dependency>
         <dependency>
-            <groupId>joda-time</groupId>
+            <groupId>joda-time898</groupId>
             <artifactId>joda-time-hibernate</artifactId>
             <version>${jodatime-hibernate.version}</version>
         </dependency>
