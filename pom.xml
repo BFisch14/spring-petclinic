@@ -26,6 +26,8 @@
 
         <!-- Test -->
         <assertj.version>2.2.0</assertj.version>
+        <junit.version>4.16-SNAPSHOT</junit.version>
+
 
         <!-- Dates -->
         <jodatime-hibernate.version>1.7-SNAPSHOT</jodatime-hibernate.version>
