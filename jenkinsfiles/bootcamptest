@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               sh 'curl -u admin:secret123 -X PUT "http://artifactory:8081/artifactory/libs-snapshot-local/com/devops-bootcamp/samples/spring-petclinic/1.1.0-SNAPSHOT/spring-petclinic-1.1.0-2.war" -T ${WORKSPACE}/spring-petclinic-jenkinsfile/target/petclinic.war' 
+               sh 'curl -u admin:secret123 -X PUT "http://artifactory:8081/artifactory/libs-snapshot-local/com/devops-bootcamp/samples/spring-petclinic/1.1.0-SNAPSHOT/spring-petclinic-1.1.0-2.war" -T ${WORKSPACE}/target/petclinic.war' 
             }
         }
     }
