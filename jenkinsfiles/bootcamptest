@@ -16,5 +16,10 @@ pipeline {
                 sh 'mvn package'
             }
         }
+        stage('Deploy') {
+            steps {
+               sh 'curl -u admin:secret123 -X PUT "http://artifactory:8081/artifactory/libs-snapshot-local/com/devops-bootcamp/samples/spring-petclinic/1.1.0-SNAPSHOT/spring-petclinic-1.1.0-1.war" -T /home/jenkins/workspace/spring-petclinic-jenkinsfile/target/petclinic.war' 
+            }
+        }
     }
 }
