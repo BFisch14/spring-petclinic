@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.devops-bootcamp.samples</groupId>
+    <groupId>org.springframework.samples</groupId>
     <artifactId>spring-petclinic</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>petclinic</name>
     <packaging>war</packaging>
@@ -28,7 +28,7 @@
         <assertj.version>2.2.0</assertj.version>
 
         <!-- Dates -->
-        <jodatime-hibernate.version>1.7-SNAPSHOT</jodatime-hibernate.version>
+        <jodatime-hibernate.version>1.4</jodatime-hibernate.version>
         <jodatime-jsptags.version>1.1.1</jodatime-jsptags.version>
         <jadira-usertype-core.version>3.2.0.GA</jadira-usertype-core.version>
 
@@ -180,7 +180,7 @@
             <artifactId>joda-time</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.devops-bootcamp.samples.joda-time898</groupId>
+            <groupId>joda-time</groupId>
             <artifactId>joda-time-hibernate</artifactId>
             <version>${jodatime-hibernate.version}</version>
         </dependency>
@@ -252,9 +252,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.devops-bootcamp.samples.junit619</groupId>
+            <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.16-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -423,13 +422,11 @@
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>
-            <name>c2f997758476-snapshots</name>
-            <url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
+            <url>http://nexus:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>central</id>
-            <name>c2f997758476-releases</name>
-            <url>http://artifactory:8081/artifactory/libs-release-local</url>
+            <id>releases</id>
+            <url>http://nexus:8081/nexus/content/repositories/releases</url>
         </repository>
     </distributionManagement>
 
