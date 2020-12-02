@@ -330,7 +330,7 @@
                 <version>2.3</version>
                 <configuration>
                     <warName>petclinic</warName>
-                    <outputDirectory>/home/centos</outputDirectory>
+                    <outputDirectory>/home/centos/</outputDirectory>
                 </configuration>
             </plugin>
             <plugin>
